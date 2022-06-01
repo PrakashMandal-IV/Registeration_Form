@@ -1,3 +1,53 @@
+//add state to list 
+let state = [ "Andhra Pradesh",
+                "Arunachal Pradesh",
+                "Assam",
+                "Bihar",
+                "Chhattisgarh",
+                "Goa",
+                "Gujarat",
+                "Haryana",
+                "Himachal Pradesh",
+                "Jammu and Kashmir",
+                "Jharkhand",
+                "Karnataka",
+                "Kerala",
+                "Madhya Pradesh",
+                "Maharashtra",
+                "Manipur",
+                "Meghalaya",
+                "Mizoram",
+                "Nagaland",
+                "Odisha",
+                "Punjab",
+                "Rajasthan",
+                "Sikkim",
+                "Tamil Nadu",
+                "Telangana",
+                "Tripura",
+                "Uttarakhand",
+                "Uttar Pradesh",
+                "West Bengal",
+                "Andaman and Nicobar Islands",
+                "Chandigarh",
+                "Dadra and Nagar Haveli",
+                "Daman and Diu",
+                "Delhi",
+                "Lakshadweep",
+                "Puducherry"]
+
+
+
+              
+function getstate()
+{
+    var stateList = document.getElementById('stateList')
+    state.forEach(element => {
+        
+    });
+}
+
+// check the password
 function CheckPassword(){
     Pass = document.getElementById('password').value
     ConfirmPass = document.getElementById('confirmpass').value
@@ -13,7 +63,7 @@ function CheckPassword(){
     }
 }
 
-
+// signin button action
 function SignUp(){
 number = document.getElementById('MobileNumber').value
 if(!checkNumber(number) || !CheckPassword())
@@ -43,8 +93,11 @@ else{
 }
 
 }
+
+//check number validation
 function checkNumber(number)
 { 
         var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/; 
         return re.test(number);      
 }
+
