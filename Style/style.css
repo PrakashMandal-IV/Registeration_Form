@@ -38,7 +38,7 @@ body {
 }
 
 .title {
-    color: rgb(96, 96, 255);
+    color: rgb(87, 87, 223);
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     text-align: center;
@@ -79,18 +79,17 @@ body {
 
 .submitBtn {
     align-self: center;
-    margin-top: 10pt;
     color: white;
     border: none;
     border-radius: 5px;
     width: 60pt;
     height: 20pt;
-    background-image: linear-gradient(to bottom, rgb(164, 164, 233), rgb(96, 96, 255));
+    background-image: linear-gradient(to bottom, rgb(133, 133, 190), rgb(96, 96, 255));
     transition: all ease-in 5ms;
 }
 
 .submitBtn:hover {
-    background-image: linear-gradient(to bottom, rgb(164, 164, 233), rgb(67, 67, 252))
+    background-image: linear-gradient(to bottom, rgb(133, 133, 190), rgb(67, 67, 252))
 }
 
 .spacer {
