@@ -36,12 +36,16 @@ body {
     flex-direction: column;
     gap: 10pt;
 }
-
+.intro{
+    text-align: center;
+}
 .title {
     color: rgb(87, 87, 223);
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    text-align: center;
+}
+.desc{
+    font-size: 10pt;
 }
 
 .inputfield {
@@ -107,6 +111,7 @@ body {
     color: red;
     margin: 0;
     font-size: 8pt;
+    margin-left: 10pt;
 }
 
   
