@@ -104,6 +104,7 @@ body {
 .login {
     font-size: 10pt;
     margin-top: 0;
+    margin-left: 10pt;
 }
 
 .errMsg {
@@ -147,4 +148,17 @@ body {
   
   .state:hover .dropdown-state {
     display: block;
+  }
+
+
+
+
+  @media screen and (max-width:1350px) {
+      .decor{
+          display: none;
+      }
+      .form, .container{
+          width: auto;
+      }
+      
   }
