@@ -36,15 +36,16 @@ let state = [ "Andhra Pradesh",
                 "Lakshadweep",
                 "Puducherry"]
 
-
-
-              
+      
 function getstate()
 {
     var stateList = document.getElementById('stateList')
-    state.forEach(element => {
-        
-    });
+    for (let i = 0; i < state.length; i++) {
+        var makeList = `
+        <button class="statebtn" id="state${i}" value="${state[i]}" onclick="selectState(this.id)">${state[i]}</button>
+        `
+        stateList.innerHTML +=makeList
+    }
 }
 
 // check the password
