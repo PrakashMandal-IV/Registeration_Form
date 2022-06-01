@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-*{
+
+* {
     font-family: 'Roboto', sans-serif;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -55,23 +57,27 @@ body {
     border-bottom: 1px solid rgb(0, 0, 0);
     outline: none;
 }
-.specialInput{
+
+.specialInput {
     display: flex;
     gap: 20pt;
 }
-.specialInput label{
+
+.specialInput label {
     margin-top: auto;
     margin-bottom: auto;
 }
-.phoneNumber{
+
+.phoneNumber {
     display: flex;
     gap: 5pt;
 }
-.cCode{
+
+.cCode {
     width: 20pt;
 }
 
-.submitBtn{
+.submitBtn {
     align-self: center;
     margin-top: 10pt;
     color: white;
@@ -79,23 +85,55 @@ body {
     border-radius: 5px;
     width: 60pt;
     height: 20pt;
-    background-image: linear-gradient(to bottom,rgb(164, 164, 233) , rgb(96, 96, 255));
+    background-image: linear-gradient(to bottom, rgb(164, 164, 233), rgb(96, 96, 255));
     transition: all ease-in 5ms;
 }
-.submitBtn:hover{
-    background-image: linear-gradient(to bottom,rgb(164, 164, 233) , rgb(67, 67, 252))
+
+.submitBtn:hover {
+    background-image: linear-gradient(to bottom, rgb(164, 164, 233), rgb(67, 67, 252))
 }
-.spacer{
+
+.spacer {
     border-bottom: 1px solid black;
     margin: 10pt;
 }
-.login{
+
+.login {
     font-size: 10pt;
     margin-top: 0;
 }
-.errMsg{
+
+.errMsg {
     visibility: hidden;
     color: red;
     margin: 0;
     font-size: 8pt;
 }
+
+  
+  .state {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-state {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-state a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-state a:hover {background-color: #f1f1f1}
+  
+  .state:hover .dropdown-state {
+    display: block;
+  }
