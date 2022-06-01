@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin-top: 10vh;
+    width: 45vw;
+    max-width: 800pt;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #6d6d6d;
+}
+
+.decor {
+    width: 50%;
+    background-image: url("/Images/Decor-Img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
+    width: 50%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
+}
+
+.title {
+    color: rgb(96, 96, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.inputfield {
+    margin: 0 20pt 0 20pt;
+    display: flex;
+    flex-direction: column;
+    gap: 5pt;
+}
+
+.input {
+    height: 30pt;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+}
+.specialInput{
+    display: flex;
+    gap: 20pt;
+}
+.specialInput label{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.phoneNumber{
+    display: flex;
+    gap: 5pt;
+}
+.cCode{
+    width: 20pt;
+}
+
+.submitBtn{
+    align-self: center;
+    margin-top: 10pt;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 60pt;
+    height: 20pt;
+    background-image: linear-gradient(to bottom,rgb(164, 164, 233) , rgb(96, 96, 255));
+    transition: all ease-in 5ms;
+}
+.submitBtn:hover{
+    background-image: linear-gradient(to bottom,rgb(164, 164, 233) , rgb(67, 67, 252))
+}
+.spacer{
+    border-bottom: 1px solid black;
+    margin: 10pt;
+}
+.login{
+    font-size: 10pt;
+    margin-top: 0;
+}
+.errMsg{
+    visibility: hidden;
+    color: red;
+    margin: 0;
+    font-size: 8pt;
+}
