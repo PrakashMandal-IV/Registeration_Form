@@ -46,8 +46,19 @@ function getstate()
         `
         stateList.innerHTML +=makeList
     }
+    document.getElementById('stateList').style.display = 'block'
 }
 
+function selectState(id)
+{
+    document.getElementById('stateList').style.display = 'none'
+    selectedState = document.getElementById(id).value
+    document.getElementById('state').value = selectedState
+}
+function closeList()
+{
+    document.getElementById('stateList').style.display = 'none'
+}
 // check the password
 function CheckPassword(){
     Pass = document.getElementById('password').value
