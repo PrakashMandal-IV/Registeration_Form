@@ -8,7 +8,7 @@
 
 ### Screenshot
 desktop
-![alt text](Images/Desktop.png)
+- ![alt text](Images/Desktop.png)
 
 Mobile Screen
-![alt text](Images/Mobile.png)
+- ![alt text](Images/Mobile.png)
