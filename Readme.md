@@ -7,8 +7,8 @@
 - Dropdowns
 
 ### Screenshot
-desktop
-- ![alt text](Images/Desktop.png)
+-desktop
+ ![alt text](Images/Desktop.png)
 
-Mobile Screen
-- ![alt text](Images/Mobile.png)
+-Mobile Screen
+ ![alt text](Images/Mobile.png)
