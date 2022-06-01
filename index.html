@@ -31,6 +31,14 @@
                         <input type="text" name="address" id="address" placeholder="Address" class="input" required>
                     </div>
                     <div class="inputfield">
+                        <div class="state">
+                            <input type="text" class="input dropbtn" onmouseover="getstate()" name="State" id="state" placeholder="Select State">
+                            <div class="dropdown-state" id="stateList" onmouseleave="closeList()">
+                         
+                            </div>
+                          </div>
+                    </div>
+                    <div class="inputfield">
                         <div class="specialInput">
                             <label style="font-size: 10pt;" for="dob">Date of Birth : </label>
                             <input type="date" name="dob" id="dob" class="input dobinput" required>
@@ -52,16 +60,8 @@
                         <input class="input" type="password" name="password" id="password" placeholder="Password" required>
                     </div>
                     <div class="inputfield">
-                        <input class="input" onchange="CheckPassword()" type="password" name="confirmpass" id="confirmpass" placeholder="Confirm Password" required>
+                        <input class="input" onchange="CheckPassword()" onmouseleave="closeList()" type="password" name="confirmpass" id="confirmpass" placeholder="Confirm Password" required>
                         <p id="passwordErr" class="errMsg">Incorrect Password</p>
-                    </div>
-                    <div class="inputfield">
-                        <div class="state">
-                            <input type="text" class="input dropbtn" onclick="getstate()" name="State" id="state" placeholder="Select State">
-                            <div class="dropdown-state" id="stateList">
-                            
-                            </div>
-                          </div>
                     </div>
                     <p id="invalidErr" class="errMsg">Invalid</p>
                     <button class="submitBtn" onclick="SignUp()">Sign Up</button>
